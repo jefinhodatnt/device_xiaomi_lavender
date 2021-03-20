@@ -23,25 +23,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, vendor/legion/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-LEGION_BUILD_TYPE := TUCUMÃ
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.maintainer.name=CHRISL7
-
-# Inherit from lavender device
+# Inherit from tulip device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := lavender
+PRODUCT_DEVICE := tulip
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := legion_lavender
-PRODUCT_MODEL := Redmi Note 7
+PRODUCT_NAME := legion_tulip
+PRODUCT_MODEL := Redmi Note 6 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-TARGET_VENDOR_PRODUCT_NAME := lavender
+TARGET_VENDOR_PRODUCT_NAME := tulip
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys"
+    PRIVATE_BUILD_DESC="tulip-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys"
 
 BUILD_FINGERPRINT :="google/redfin/redfin:11/RQ2A.210305.006/7119741:user/release-keys"

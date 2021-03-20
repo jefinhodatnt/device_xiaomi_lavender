@@ -14,7 +14,7 @@ fi
 
 set -e
 
-export DEVICE=lavender
+export DEVICE=tulip
 export DEVICE_COMMON=sdm660-common
 export VENDOR=xiaomi
 

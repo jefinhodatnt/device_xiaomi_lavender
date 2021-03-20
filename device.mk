@@ -24,7 +24,7 @@
 # Inherit from sdm660-common
 $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
-DEVICE_PATH := device/xiaomi/lavender
+DEVICE_PATH := device/xiaomi/tulip
 
 # Properties ($PATH.prop)
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
@@ -78,7 +78,7 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    LavenderWifiOverlay
+    tulipWifiOverlay
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
+$(call inherit-product, vendor/xiaomi/tulip/tulip-vendor.mk)

@@ -25,10 +25,10 @@
 # Inherit from sdm660-common
 include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/lavender
+DEVICE_PATH := device/xiaomi/tulip
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := lavender
+TARGET_OTA_ASSERT_DEVICE := tulip
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
@@ -46,7 +46,7 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_DENSITY := 420
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/mystic-lavender_defconfig
+TARGET_KERNEL_CONFIG := tulip_defconfig
 BOARD_KERNEL_SEPARATED_DTBO := true
 
 # Manifest
@@ -68,4 +68,4 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 VENDOR_SECURITY_PATCH := 2020-08-05
 
 # Inherit the proprietary files
-include vendor/xiaomi/lavender/BoardConfigVendor.mk
+include vendor/xiaomi/tulip/BoardConfigVendor.mk

@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/legion_lavender.mk
+    $(LOCAL_DIR)/legion_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-    legion_lavender-eng \
-    legion_lavender-userdebug \
-    legion_lavender-user
+    legion_tulip-eng \
+    legion_tulip-userdebug \
+    legion_tulip-user
